@@ -1,0 +1,255 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* <-- space between brand & logout */
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #843db7; /* Example blue */
+  color: #fff;
+}
+
+/* Brand style */
+.navbar__brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Logout button style */
+.navbar__logout {
+  background-color: #fff;
+  color: #4a90e2;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.navbar__logout:hover {
+  background-color: #f0f0f0;
+}
+
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #e6f0fa, #d0e1f9);
+  font-family: Arial, sans-serif;
+}
+
+/* Title */
+.auth-title {
+  color: #fff;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  background: #4b0082;
+  padding: 20px;
+  border-radius: 15px 0 0 15px;
+}
+
+/* Subtitle */
+.auth-subtitle {
+  color: #666;
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+/* Input */
+.auth-input {
+  width: 300px;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #bebebe;
+  border-radius: 5px;
+  font-size: 1em;
+  background: #f9f9f9;
+ /* box-sizing: border-box;*/
+}
+
+/* Error paragraph below inputs */
+.auth-container p {
+  color: #666;
+  margin: 0 0 0 5px;
+  font-size: 12.5px;
+  max-width: 300px;
+  word-wrap: break-word;   /* Ensures long words wrap */
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+/* Signup button */
+.auth-button {
+  width: 300px;
+  padding: 10px;
+  background: #4b0082;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.auth-button:hover {
+  background: #5e1a8a;
+}
+
+.auth-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Button container for loading icon */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
+/* Loading icon styles */
+.loading-icon {
+  display: none;
+  margin-top: 10px;
+}
+
+.loading-icon.active {
+  display: inline-block;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #fff;
+  border-top: 3px solid #4b0082;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+/* Shared container styles for login and auth */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #e6f0fa, #d0e1f9);
+  font-family: Arial, sans-serif;
+}
+
+/* Title styles */
+.login-title {
+  color: #fff;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  background: #4b0082;
+  padding: 20px;
+  border-radius: 15px 0 0 15px;
+}
+
+/* Subtitle styles */
+.login-subtitle {
+  color: #666;
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+/* Input styles */
+.login-input {
+  width: 300px;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  background: #f9f9f9;
+}
+
+/* Button styles */
+.login-button {
+  width: 300px;
+  padding: 10px;
+  background: #4b0082;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.login-button:hover{
+  background: #5e1a8a;
+}
+
+.login-button:disabled{
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Signup text and button styles */
+.signup-text {
+  margin-top: 15px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.signup-button {
+  color: #4b0082;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.signup-button:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Button container for aligning the loading icon */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px; /* Match button width */
+}
+
+/* Loading icon styles */
+.loading-icon {
+  display: none; /* Hidden by default */
+  margin-top: 10px; /* Space below the button */
+}
+
+.loading-icon.active {
+  display: inline-block; /* Show when active */
+}
+
+/* Spinner styles */
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #fff;
+  border-top: 3px solid #4b0082;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
