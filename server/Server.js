@@ -11,7 +11,7 @@ app.use(cors())
 app.use('/api', authRoutes)
 app.use('/api/todos', todoRoutes)
 
-mongoose.connect('mongodb://127.0.0.1:27017/myauth')
+mongoose.connect(process.env.MONGO_URI)
 .then(() => console.log('connected to mongodb'))
 .catch(err => console.error('connection error', err))
 
